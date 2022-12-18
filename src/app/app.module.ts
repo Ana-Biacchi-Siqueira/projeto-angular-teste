@@ -1,4 +1,3 @@
-import { RouterModule } from '@angular/router';
 import { AutorModule } from './autores/autor.module';
 import { LivroModule } from './livros/livro.module';
 import { NgModule } from '@angular/core';
@@ -15,8 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     LivroModule,
-    AutorModule,
-    RouterModule
+    AutorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

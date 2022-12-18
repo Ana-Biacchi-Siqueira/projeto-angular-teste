@@ -10,8 +10,8 @@ const routes: Routes = [
   { path: 'livros', component: ListaLivroComponent },
   { path: 'livros/formulario', component: FormularioLivroComponent },
   { path: 'livros/formulario/:id', component: FormularioLivroComponent },
-  { path: 'autores/formularios', component: FormularioAutorComponent },
-  { path: 'autores/formularios/:id', component: FormularioAutorComponent },
+  { path: 'autores/formulario', component: FormularioAutorComponent },
+  { path: 'autores/formulario/:id', component: FormularioAutorComponent },
 ];
 
 @NgModule({
