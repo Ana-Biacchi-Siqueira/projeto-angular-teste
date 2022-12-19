@@ -1,2 +1,20 @@
-<p *ngIf="!id">Cadastrando novo autor</p>
-<p *ngIf="id">Alterando autor</p>
+<div class="text-center m-2">
+<h1 *ngIf="!id">Cadastrando novo autor</h1>
+<h1 *ngIf="id">Alterando autor</h1>
+</div>
+
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="nome" placeholder="Suzanne Collins">
+  <label for="nome">Nome do autor</label>
+</div>
+
+<div class="form-floating">
+  <textarea type="text" class="form-control" id="biografia" placeholder="Suzanne Collins é uma escritora e roteirista de ficção científica e literatura infanto-juvenil americana"></textarea>
+  <label for="biografia">Biografia</label>
+</div>
+
+<div class="form-floating mt-3">
+  <button *ngIf="!id" type="button" class="btn btn-success">Cadastrar</button>
+  <button *ngIf="id" type="button" class="btn btn-success">Alterar</button>
+  <button type="button" class="btn btn-secondary ms-3" routerLink="/autores">Cancelar</button>
+</div>
