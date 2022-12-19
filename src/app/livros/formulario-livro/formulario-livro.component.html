@@ -1,3 +1,27 @@
-<p>formulario-livro works!</p>
-<p *ngIf="!id">Cadastrando novo livro</p>
-<p *ngIf="id">Alterando livro</p>
+<div class="text-center m-2">
+  <h1 *ngIf="!id">Cadastrando novo livro</h1>
+  <h1 *ngIf="id">Alterando livro</h1>
+</div>
+
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="titulo" placeholder="Hunger Games">
+  <label for="titulo">Título</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="anoLancamento" placeholder="2000">
+  <label for="anoLancamento">Ano de lançamento</label>
+</div>
+
+<p>Escolha o(s) autor(es)</p>
+<select class="form-select mb-1" id="autoresIds" multiple size="5">
+  <option value="1">Autor 1</option>
+  <option value="2">Autor 2</option>
+  <option value="3">Autor 3</option>
+</select>
+
+
+<div class="form-floating mt-3">
+  <button *ngIf="!id" type="button" class="btn btn-success">Cadastrar</button>
+  <button *ngIf="id" type="button" class="btn btn-success">Alterar</button>
+  <button type="button" class="btn btn-secondary ms-3" routerLink="/livros">Cancelar</button>
+</div>
