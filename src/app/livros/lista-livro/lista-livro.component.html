@@ -1,5 +1,26 @@
-<p>lista-livro works!</p>
+<div class="mt-2 mb-2">
+  <h1>Lista de Livros</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="text-center">
+      <th>Titulo</th>
+      <th>Ano de lançamento</th>
+      <th>Autor</th>
+      <th>Ações</th>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <td>Hunger Games</td>
+        <td>2008</td>
+        <td>Suzanne Collins</td>
+        <td><button  class="btn btn-secondary btn-sm" routerLink="/livros/formulario/1">Alterar livro</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<a routerLink="/livros/formulario">Cadastrando livro</a>
-<br>
-<a routerLink="/livros/formulario/1">Alterando livro</a>
+<div>
+<button class="btn btn-success" routerLink="/livros/formulario">Cadastra livro</button>
+
+</div>

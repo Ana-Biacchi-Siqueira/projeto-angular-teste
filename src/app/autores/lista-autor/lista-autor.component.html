@@ -1,4 +1,24 @@
-<p>lista-autor works!</p>
-<a routerLink="/autores/formulario">Cadastra autor</a>
-<br>
-<a routerLink="/autores/formulario/1">Alterar autor</a>
+<div class="mt-2 mb-2">
+  <h1>Lista de Autores</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="text-center">
+      <th>Nome</th>
+      <th>Biografia</th>
+      <th>Ações</th>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <td>Autor 1</td>
+        <td>Biografia 1</td>
+        <td><button  class="btn btn-secondary btn-sm" routerLink="/autores/formulario/1">Alterar autor</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+<button class="btn btn-success" routerLink="/autores/formulario">Cadastra autor</button>
+
+</div>
